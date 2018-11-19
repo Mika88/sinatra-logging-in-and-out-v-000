@@ -11,6 +11,7 @@
       <h3>Password:<%=Helpers.current_user(session).balance%></h3>
       <a href="/logout">Log Out</a>
     <%else%>
-      <a href="/">Home</a>
+      <%erb :error%>
+      <%end%>
   </body>
 </html>
